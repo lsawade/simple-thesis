@@ -1,0 +1,101 @@
+% -------------- Document layout settings ---------------------------------
+% Let us set dimensions according to Princeton University thesis formatting guidelines
+\setlength{\oddsidemargin}{.5in}
+\setlength{\evensidemargin}{.5in}
+\setlength{\topmargin}{-.5in}
+\setlength{\textheight}{9in}
+\setlength{\textwidth}{6in}
+% -------------------------------------------------------------------------
+
+
+% -------------- Linespacing ----------------------------------------------
+% Set double spacing
+\usepackage{setspace}
+\doublespacing
+% -------------------------------------------------------------------------
+
+
+% -------------- Macros for title etc. -----------------------------------
+
+% Basic definition of author, title, date, advisor etc.
+\title{Centroid Moment Tensors in a heterogenous Earth}
+\author{Lucas Sawade}
+\date{\monthyeardate\today}
+
+% Defining custom Macros such as \title,\author\date
+\makeatletter
+\def\adviser#1{\gdef\@adviser{#1}}
+\def\@tutor{\@latex@warning@no@line{No \noexpand\adviser given}}
+\makeatother
+
+%\makeatletter
+%\def\tutor#1{\gdef\@tutor{#1}}
+%\def\@tutor{\@latex@warning@no@line{No \noexpand\tutor given}}
+%\makeatother
+% -------------------------------------------------------------------------
+
+
+% -------------- Header ---------------------------------------------------
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead{}
+\fancyhead[R]{\thepage}
+\fancyhead[L]{\textit{\nouppercase{\rightmark}}}
+\fancyfoot{}
+% -------------------------------------------------------------------------
+
+
+% -------------- Bibliography ---------------------------------------------
+% And each chapter gets its own bibliography
+\usepackage{chapterbib}
+
+% Bibliography stuff
+\usepackage[round, sort, comma]{natbib}
+%\bibliographystyle{../../my_plainnat}
+% -------------------------------------------------------------------------
+
+
+% -------------- Figures, reference linking, captions ---------------------
+% This part sucks -> we have to add the graphics path for each chapter...
+\usepackage{graphicx}
+\graphicspath{}
+
+% We'd like to put each figure on its page
+\usepackage{afterpage}
+
+% Shall we use hyperref?
+\usepackage{hyperref}
+
+% Ya boi has some long captions
+\usepackage{ccaption}% http://ctan.org/pkg/ccaption
+% -------------------------------------------------------------------------
+
+
+% -------------- Random special packages ----------------------------------
+% Also, some special packages
+%\usepackage{gensymb}
+%\usepackage{wasysym}
+%\usepackage{tabularx}
+%\usepackage{booktabs}
+
+
+% New date formats
+\usepackage{datetime}
+\newdateformat{monthyeardate}{\monthname[\THEMONTH], \THEYEAR}
+\newdateformat{yeardate}{\THEYEAR}
+
+% Begin with some roman numerals
+\pagenumbering{roman}
+
+% Some basic macros
+%\newcolumntype{D}{>{\itshape\arraybackslash}l}
+% -------------------------------------------------------------------------
+
+
+
+% -------------- Random special macros -00---------------------------------
+
+% Add a numbered section 
+
+
+

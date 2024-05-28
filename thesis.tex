@@ -1,0 +1,43 @@
+\documentclass[letterpaper, 12pt]{report}
+
+\input{preamble}
+\usepackage{lipsum}
+%\includeonly{chapters/chapter1/main}
+
+\begin{document}
+    % Title Page	
+	\input{chapters/frontmatter/title}
+    \clearpage
+    \input{chapters/frontmatter/copyright}
+    \clearpage
+    \input{chapters/frontmatter/dedication}
+    \clearpage
+    \input{chapters/frontmatter/abstract}
+    
+    \include{chapters/frontmatter/acknowledgements}
+    \tableofcontents
+    \listoffigures
+    \listoftables
+    \setcounter{page}{1}
+    \pagenumbering{arabic}
+    
+    % introduction
+    \include{chapters/introduction/introduction}
+    
+    % chapter 1
+	\include{chapters/chapter1/main}
+
+    % chapter 2
+	\include{chapters/chapter2/main}
+
+    
+    
+
+
+    % \chapter{Introduction}
+    \setcounter{page}{1}
+    \pagenumbering{arabic}
+
+
+
+\end{document}
