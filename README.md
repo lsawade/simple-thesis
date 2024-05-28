@@ -6,6 +6,9 @@ Features:
 - Simple setup
 - chapterwise compilation using `\includeonly`
 
+Notes:
+
+- `chapterbib` bibliography does not work with Texifier, but compiling in VSCode works fine!
 
 ---
 
