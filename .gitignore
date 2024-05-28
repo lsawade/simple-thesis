@@ -1,2 +1,15 @@
 .DS_Store
 thesis.pdf
+*.aux
+*.fdb_latexmk
+*.fls
+*.lof
+*.log
+*.lot
+*.out
+*.synctex.gz
+*.synctex.toc
+*.toc
+*.bbl
+*.blg
+*.bbl

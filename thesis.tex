@@ -1,8 +1,21 @@
-\documentclass[letterpaper, 12pt]{report}
+\documentclass[letterpaper, 12pt,english]{report}
 
 \input{preamble}
-\usepackage{lipsum}
+
+% Finally add all basic author, title and added macros:
+% Basic definition of author, title, date, advisor etc.
+\title{Centroid Moment Tensors in a heterogenous Earth}
+\author{Lucas Sawade}
+\adviser{Jeroen Tromp}
+\department{Department of Geosciences}
+\university{Princeton University}
+\date{\monthyeardate\today}
+
+
+% Define a single chapter that you want to load
 %\includeonly{chapters/chapter1/main}
+
+
 
 \begin{document}
     % Title Page	
@@ -29,15 +42,6 @@
 
     % chapter 2
 	\include{chapters/chapter2/main}
-
-    
-    
-
-
-    % \chapter{Introduction}
-    \setcounter{page}{1}
-    \pagenumbering{arabic}
-
 
 
 \end{document}
