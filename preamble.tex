@@ -10,8 +10,8 @@
 
 % -------------- Fonts, spacing, etc. -------------------------------------
 % Set double spacing
-%%\usepackage{setspace}
-%%\doublespacing
+\usepackage{setspace}
+\doublespacing
 %
 
 % -------------------------------------------------------------------------
@@ -42,12 +42,12 @@
 
 
 % -------------- Header ---------------------------------------------------
-%\usepackage{fancyhdr}
-%\pagestyle{fancy}
-%\fancyhead{}
-%\fancyhead[R]{\thepage}
-%\fancyhead[L]{\textit{\nouppercase{\rightmark}}}
-%\fancyfoot{}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead{}
+\fancyhead[R]{\thepage}
+\fancyhead[L]{\textit{\nouppercase{\rightmark}}}
+\fancyfoot{}
 % -------------------------------------------------------------------------
 
 
@@ -58,8 +58,8 @@
 \usepackage[latin1]{inputenc}
 \usepackage{babel}
 \usepackage[sectionbib]{chapterbib}
-\usepackage{lmodern}
-\usepackage{blindtext}
+
+
 
 % Bibliography stuff
 %\usepackage[round, sort, comma]{natbib}
@@ -68,19 +68,23 @@
 % -------------------------------------------------------------------------
 
 
-% -------------- Figures, reference linking, captions ---------------------
+% -------------- Figures, reference linking, captions, tables -------------
 % This part sucks -> we have to add the graphics path for each chapter...
 \usepackage{graphicx}
-\graphicspath{}
+%\graphicspath{{chapters/chapter1/figures/}{chapters/chapter2/figures/}}
+
+% Used for updating the graphics path in each chapter
+% Note the line underneath the chapter init!! \graphicspath{{\currfiledir/figures/}}
+\usepackage{currfile}
 
 % We'd like to put each figure on its page
-%\usepackage{afterpage}
+\usepackage{afterpage}
 
 % Shall we use hyperref?
 \usepackage{hyperref}
 
 % Ya boi has some long captions
-%\usepackage{ccaption}% http://ctan.org/pkg/ccaption
+\usepackage{ccaption}% http://ctan.org/pkg/ccaption
 
 % Tables
 %\usepackage{tabularx}
@@ -93,8 +97,6 @@
 % Also, some special packages
 %\usepackage{gensymb}
 %\usepackage{wasysym}
-
-
 
 
 % New date formats
