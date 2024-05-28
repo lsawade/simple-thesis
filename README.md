@@ -12,5 +12,5 @@ Notes:
 
 ---
 
-Based on a template that's been floating around the geoscience department at Princeton. Original owner is believed to be @akshaymehra!
+Based on a template that's been floating around the geoscience department at Princeton. Original owner is believed to be @akshaymehra !
 
