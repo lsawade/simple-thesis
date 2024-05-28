@@ -3,7 +3,7 @@
 Features:
 
 - Chapterwise bibliography
-- Simple setup
+- chapterwise figures directory (almost automatic)
 - chapterwise compilation using `\includeonly`
 
 Notes:
