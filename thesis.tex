@@ -18,7 +18,7 @@
 
 
 \begin{document}
-    % Title Page	
+    % Title Page
 	\input{chapters/frontmatter/title}
     \input{chapters/frontmatter/copyright}
     \input{chapters/frontmatter/dedication}
@@ -29,15 +29,25 @@
     \listoftables
     \setcounter{page}{1}
     \pagenumbering{arabic}
-    
+
     % introduction
     \include{chapters/introduction/introduction}
-    
+
     % chapter 1
 	\include{chapters/chapter1/main}
 
     % chapter 2
 	\include{chapters/chapter2/main}
+
+    \begin{appendices}
+
+        % chapter 1 appendix
+        \include{chapters/chapter1/appendix}
+
+        % chapter 2 appendix
+        \include{chapters/chapter2/appendix}
+
+    \end{appendices}
 
 
 \end{document}
